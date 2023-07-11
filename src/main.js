@@ -1,4 +1,8 @@
 const { createApp } = require('vue');
 import App from './App.vue';
+import STable from '@surely-vue/table';
+const app = createApp(App);
 
-createApp(App).mount('#app');
+app.use(STable);
+
+app.mount('#app');

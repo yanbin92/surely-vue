@@ -8,7 +8,6 @@
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import STable from '@surely-vue/table';
 
 interface DataItem {
   key: number;
@@ -32,19 +31,6 @@ export default defineComponent({
         title: 'Column 1',
         dataIndex: 'address',
       },
-      {
-        title: 'Column 2',
-        dataIndex: 'address',
-      },
-      {
-        title: 'Column 3',
-        dataIndex: 'address',
-      },
-      {
-        title: 'Column 4',
-        dataIndex: 'address',
-      },
-      { title: 'Column 5', dataIndex: 'address' },
     ];
     const data: DataItem[] = [];
     for (let i = 0; i < 1000; i++) {
